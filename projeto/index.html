@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Relógio</title>
+</head>
+<body>
+    <div>
+        <div class="ap">
+            <div id="ampm">Am</div>
+        </div>
+        <div id="relogio">
+            <div class="circulo">
+                <div id="ptsH" class="pontos hPonto light"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="hh"></circle>
+                </svg>
+                <div id="horas">00</div>
+            </div>
+            <div class="circulo">
+                <div id="ptsM" class="pontos mPonto light"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="mm"></circle>
+                </svg>
+                <div id="minutos">00</div>
+            </div>
+            <div class="circulo">
+                <div id="ptsS" class="pontos sPonto light"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="ss"></circle>
+                </svg>
+                <div id="segundos">00</div>
+            </div>
+        </div>
+        <div class="btns">
+            <div>
+                <a class="lightbtn" id="btn" onclick="dark()">Dark Mode</a>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
